@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "es6": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "indent": [2, 4],
+    "max-len": 0,
+    "no-alert": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": [1, 4],
+    "react/jsx-indent-props": [1, 4],
+    "react/no-did-mount-set-state": "off",
+    "react/no-did-update-set-state": "off",
+    "react/no-array-index-key": "off",
+    "react/prop-types": ["off"],
+    "react/no-unused-prop-types": ["off", { "skipShapeProps": true }],
+    "object-curly-newline": ["error", { "multiline": true }],
+    "jsx-a11y/anchor-is-valid": [ "error", {"specialLink": ["to"]}],
+    "jsx-a11y/label-has-for": [ 2, {
+      "components": [],
+      "required": {
+        "some": [ "nesting", "id" ]
+      },
+      "allowChildren": true
+    }],
+    "no-plusplus": "off"
+  },
+  "globals": {
+    "jest": true,
+    "YouniqueFacebook": true,
+    "window": true
+  }
+}
